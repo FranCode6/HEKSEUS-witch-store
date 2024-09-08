@@ -1,0 +1,248 @@
+
+.body{
+	background-color: #faf2e9;
+	
+    display: grid;
+	grid-gap: 1rem;
+	grid-template-areas:
+		"header header header"
+		"main main main"
+		"footer footer footer";
+	grid-template-columns: 15% auto;
+	grid-template-rows: auto;
+
+	flex: 1;
+
+	overflow-x: hidden;
+}
+
+ /**HEADER**/
+
+.header{
+	margin-bottom: -16px;
+	margin: -15px;
+	position: inline;
+	padding: -20px;
+    grid-area: header;
+}
+
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #ffedd7;
+	font-size: 60px;
+	color: #004AAD;
+	margin: 0px;
+	margin-left: 0px;
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-bottom: 10px;
+
+	text-align: center;
+}
+.button-checkout {
+    background-color: #FFE6D0;
+	border-radius: 10px;
+    color: #004AAD;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	border: none;
+	text-decoration: none;
+    transition-duration: 0.3s;
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+	
+}
+.button-checkout:hover {
+    background-color: #004AAD;
+	color: #F9A7C9;
+}
+
+ /**MAIN**/
+
+button {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+	margin-top: 15px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.main{
+    grid-area: main;
+}
+.main_article__subtitulo{
+	font-family: 'Macondo', cursive;
+	font-size: 33px;
+	color: #004AAD;
+	margin-top: 40px;
+	margin-left: 100px;
+	margin-bottom: 10px;
+	padding: 2px 16px;
+	width: 80%;
+	height: 100%;
+	padding: 0px;
+	
+}
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.page-text {
+	font-family: 'Macondo', cursive;
+	font-size: 20px;
+	color: #004AAD;
+	margin: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-indent: 30px;
+	
+}
+#texto-izquierda{
+	float: right;
+}
+.product-container{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	margin: 17px;
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+.product-container div{
+	background-color: #FFE6D0;
+	border-radius: 10px;
+	font-family: 'Macondo', cursive;
+	color: #004AAD;
+	margin: 15px;
+	padding: 2px 16px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+	align-items: center;
+	justify-content: center;
+	backface-visibility: hidden;
+	transition: 0.8s;
+}
+.product-container h3{
+	margin: 10px;
+	font-size: 30px;
+	position: center;
+}
+.product-container .img {
+    width: 300px;
+	margin-left: 0px;
+}
+.product-container img {
+    width: 250px;
+	margin-left: 10%;
+}
+.product-container h2 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.product-container h2 {
+	align-content: justify;
+    margin-bottom: 10px;
+    margin-left: 15px;
+	position: flex;
+	bottom: 10%;
+}
+.product-container p{
+	text-align: justify;
+	margin: 10px;
+	font-size: 19px;
+}
+.product-container .frente{
+	background-color: #FFE6D0;
+	border-radius: 10px;
+	font-family: 'Macondo', cursive;
+	color: #004AAD;
+	margin: 15px;
+	padding: 2px 16px;
+	transform: perspective(500px) rotateY(0deg);
+
+}
+.product-container .atras{
+	background-color: #004AAD;
+	border-radius: 10px;
+	font-family: 'Macondo', cursive;
+	color: #c7c5c3;
+	margin: 15px;
+	padding: 2px 16px;
+	align-content: top;
+	transform: perspective(500px) rotateY(180deg);
+	
+}
+.product-container:hover .frente{
+	
+	margin: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: perspective(500px) rotateY(180deg);
+
+}
+.product-container:hover .atras{
+	
+	margin: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: perspective(500px) rotateY(360deg);
+	
+}
+.button-add {
+    padding: 7px;
+	border: none;
+	background-color: #F9A7C9;
+	color: #004AAD;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.button-add:hover {
+    background-color: #004AAD;
+	color: #F9A7C9;
+}
+.img{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+@keyframes mianimacion {
+	0% { }
+	50% { }
+	100% { }
+}
+
+ /**ASIDE**/
+
+.aside{
+    grid-area: aside;
+}
+ /**FOOTER**/
+.footer{
+	background-color: #FFE6D0;
+	margin: -15px;
+    grid-area: footer;
+}
+.navegator{
+	font-family: 'Josefin Sans', sans-serif;
+	text-decoration: none;
+	float: right;
+	margin-top: 10px;
+	
+}
+.navegator li{
+	margin: 10px;
+	padding: 10px;
+	list-style: none;
+	display: inline;
+	font-size: 25px;
+}
+.redes{
+	width: 30px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

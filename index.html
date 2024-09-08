@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HEKSEUS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <link rel="stylesheet" type="text/js" href="scripts.js">
+        <script src="scripts.js"></script>
+       
+        <link rel="shortcut icon" href="imagenes/icono.png">
+
+            <!--FUENTES-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">  
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet"> 
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet"> 
+
+    </head>
+    <body class="body">
+        
+            <header class="header">
+            <div class="encabezado">
+                <h1 id="titulo">Hekseus Witch Store</h>
+                <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+            </div>
+            
+            </header>
+            <main class="main">
+            <article class="main_article">
+                <p class="main_article__subtitulo">Cristales</p>
+                <div class="page-content">
+                    <div class="product-container">
+                        <div class="frente">
+                            <h3>Amatista</h3>
+                            <img class="img" src="imagenes/product-1.png">
+                            <h2>$350</h2>
+                            
+                        </div>
+                        <div class="atras">
+                            <h3>Amatista</h3>
+                            <p>
+                                Esta piedra es una excelente compañía para el momento de meditar. El cuarzo amatista también puede utilizarse para mejorar la concentración, la comprensión y abrir la intuición. También se ha asociado a la disminución del estrés y sentimientos negativos como la ira.
+                            </p>
+                            <button class="button-add" onclick="add('Amatista', 350)">Agregar</button>
+                        </div>
+                    </div>
+        
+                        <div class="product-container">
+                        <div class="frente">
+                            <h3>Aventurina</h3>
+                            <img class="img" src="imagenes/product-2.png" />
+                            <h2>$300</h2>
+                            
+                        </div>
+                        <div class="atras">
+                            <h3>Aventurina</h3>
+                            <p>
+                                Esta gema tiene muchas propiedades positivas, tanto energéticas como curativas, basadas en culturas milenarias, atribuyéndoles poderes. Se dice que esta piedra atrae la buena fortuna y es excelente para atraer la PROSPERIDAD a tu vida.
+                            </p>
+                            <button class="button-add" onclick="add('Aventurina', 300)">Agregar</button>
+                        </div>
+                        </div>
+
+                        <div class="product-container">
+                        <div class="frente">
+                            <h3>Amazonita</h3>
+                            <img  src="imagenes/product-3.png" class="img"/>
+                            <h2>$250</h2>
+                            
+                        </div>
+                        <div class="atras">
+                            <h3>Amazonita</h3>
+                            <p>
+                                Se cree que al llevar el mineral, nos llenaremos de valentía, fortaleza mental y claridad para tomar decisiones importantes. La amazonita es una piedra calmante en episodios de estrés, mejora la creatividad y nos ayuda a expresarnos, a sacar lo que llevamos dentro.
+                            </p>
+                            <button class="button-add" onclick="add('Amazonita ', 250)">Agregar</button>
+                        </div>
+                        </div>
+                  
+                        <div class="product-container">
+                            <div class="frente">
+                                <h3>Pirita</h3>
+                                <img  src="imagenes/product-4.png" />
+                                <h2>$200</h2>
+
+                            </div>
+                            <div class="atras">
+                                <h3>Pirita</h3>
+                                <p>
+                                    A nivel físico este mineral protege al cuerpo de enfermedades contagiosas de todo tipo, incluso llegándose a utilizar para disminuir la fiebre y reducir la inflamación, puesto que la pirita aumenta el suministro de oxígeno a la sangre y fortalece los sistemas respiratorio y circulatorio. Tambien es considerada el principal amuleto por excelencia del dinero.
+                                </p>
+                                <button class="button-add" onclick="add('Pirita', 200)">Agregar</button>
+                            </div>
+                        </div>
+                    
+                        <div class="product-container">
+                            <div class="frente">
+                                <h3>Turmalina Negra</h3>
+                                <img  src="imagenes/product-5.png" />
+                                <h2>$410</h2>
+
+                            </div>
+                            <div class="atras">
+                                <h3>Turmalina Negra</h3>
+                                <p>
+                                    La turmalina negra se considera una piedra de referencia para la limpieza, la protección y la transformación. Absorbe las energías densas y las dirige hacia la tierra para ser transmutadas. Se recomienda utilizarla en su forma natural de cristalización y en posición vertical.
+                                </p>
+                                <button class="button-add" onclick="add('Turmalina Negra', 410)">Agregar</button>
+                            </div>
+                        </div>
+                    
+                        <div class="product-container">
+                            <div class="frente">
+                                <h3>Citrino</h3>
+                                <img  src="imagenes/product-6.png" />
+                                <h2>$650</h2>
+
+                            </div>
+                            <div class="atras">
+                                <h3>Citrino</h3>
+                                <p>
+                                    El cuarzo citrino se asocia al 3º y 7º chakra. Representa la fuerza solar y está relacionado con la creatividad y la prosperidad, con lo que suele usarse para activar y emprender ideas y proyectos. Favorece la asimilación, tanto a nivel físico y nutritivo como a nivel emocional y espiritual.
+                                </p>
+                                <button class="button-add" onclick="add('Citrino', 650)">Agregar</button>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+
+            </article>
+           
+            </main>
+            <footer class="footer">
+                <div class="nav-footer">
+                    <div class="navegator">
+                        <ul>
+                            <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                        </ul>
+                    </div> 
+                    <div class="nav-img">
+                        <img class="redes" src="imagenes/Instagram-Icon.png" alt="https://www.instagram.com/fraxco_6/" class="perfilDeRedes" href="https://www.instagram.com/fraxco_6/">
+                        <img class="redes" src="imagenes/Facebook-Icon.png" alt="" class="perfilDeRedes">
+                        <img class="redes" src="imagenes/tiktok-Icon.png" alt="" class="perfilDeRedes">                         
+                    </div>
+                </div>
+            </footer>
+        
+    </body>
+
+</html>
